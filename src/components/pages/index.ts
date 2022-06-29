@@ -1,4 +1,4 @@
-import ProfilPage from './profile/ProfilePage';
+import HomePage from './HomePage';
 import NotFound from './404';
 
-export { ProfilPage, NotFound };
+export { HomePage, NotFound };
