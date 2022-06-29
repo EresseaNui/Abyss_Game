@@ -1,15 +1,15 @@
 import React from 'react';
 import { Redirect, Switch, BrowserRouter, Route } from 'react-router-dom';
-import { ProfilPage } from './components/pages';
+import { HomePage } from './components/pages';
 
 const Routes: React.FC<unknown> = () => {
   return (
     <div className="relative">
       <Switch>
-        <Redirect exact from="/" to="/profile" />
-        <Redirect exact from="*undefined*" to="/profile" />
+        <Redirect exact from="/" to="/home" />
+        <Redirect exact from="*undefined*" to="/home" />
 
-        <Route path="/profile" component={ProfilPage} />
+        <Route path="/home" component={HomePage} />
       </Switch>
     </div>
   );
